@@ -569,4 +569,4 @@
   setState("idle");
   // Start the animation loop immediately (it draws).
   requestAnimationFrame(loop);
-})();%
+})();
