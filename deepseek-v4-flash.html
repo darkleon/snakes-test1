@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="game-container">
+    <!-- Header -->
+    <header class="header">
+      <h1 class="title">SNAKE</h1>
+      <div class="badges">
+        <div class="badge badge--score">
+          <span class="badge-value">Score</span>
+          <span id="score" class="badge-value">0</span>
+        </div>
+        <div class="badge badge--best">
+          <span class="badge-value">Best</span>
+          <span id="highScore" class="badge-value">0</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Game Board -->
+    <div class="board">
+      <canvas id="game" width="500" height="500"></canvas>
+
+      <!-- Overlay -->
+      <div id="overlay" class="overlay hidden">
+        <h2 class="overlay-title">Game Over</h2>
+        <p id="overlayMessage" class="overlay-message"></p>
+        <button id="overlayRestart" class="btn">Play Again</button>
+      </div>
+    </div>
+
+    <!-- Actions -->
+    <div class="actions">
+      <button id="startBtn" class="btn">Start</button>
+      <button id="restartBtn" class="btn">Restart</button>
+    </div>
+
+    <!-- Instructions -->
+    <div class="info-panel">
+      <p>
+        <strong>Move:</strong> <kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd>
+        or <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> &nbsp;·&nbsp;
+        <strong>Pause:</strong> <kbd>Space</kbd>
+      </p>
+    </div>
+  </div>
+
+  <script src="js/game.js"></script>
+</body>
+</html>
